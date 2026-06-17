@@ -277,6 +277,7 @@ let btnEventoRojo = (event) => {
 
 contenedorMesas.addEventListener('click', btnEvento)
 
+//preguntar que hace el click y para que sirve
 let click = false;
 
 botonUnirMesa.addEventListener('click', (event) => {
@@ -332,6 +333,8 @@ for (let producto of productos) {
 }
 menuGrid.innerHTML = productosHTML
 
+
+//preguntar como funciona este evento y para que sirve, y como se relaciona con el pedido y la comanda
 menuGrid.addEventListener('click', (event) => {
     if(event.target.type == 'button'){
         console.log(event.target.dataset.id)
