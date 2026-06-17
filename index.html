@@ -1,0 +1,194 @@
+<!doctype html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Sistema de Restaurante - Comandas</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="styles.css" />
+
+</head>
+
+<body>
+
+    <header class="topbar">
+
+        <h1>Sistema de Comandas</h1>
+
+        <p>Panel de administración de restaurante</p>
+
+    </header>
+
+
+
+    <main class="dashboard">
+
+        <section class="panel panel-mesas" aria-label="Sección de mesas">
+
+            <div class="panel-header">
+
+                <h2><i class="fa-solid fa-chair" aria-hidden="true"></i> Mesas</h2>
+
+                <span class="badge"></span>
+
+            </div>
+
+
+
+            <div class="mesas-grid">
+
+
+
+            </div>
+
+        </section>
+
+
+
+        <section class="panel panel-menu" aria-label="Sección de menú">
+
+            <div class="panel-header">
+
+                <h2><i class="fa-solid fa-receipt" aria-hidden="true"></i> Menú</h2>
+
+                <span class="badge">8 productos</span>
+
+            </div>
+
+
+
+            <div class="menu-grid">
+
+            
+            </div>
+
+        </section>
+
+
+
+        <aside class="panel panel-comanda d-none" aria-label="Comanda actual">
+
+            <div class="panel-header">
+
+                <h2 id="tituloMesa"><i class="fa-solid fa-ticket" aria-hidden="true"></i> Comanda Mesa #1</h2>
+
+            </div>
+
+
+
+            <section class="mesa-detalle" aria-label="Detalle de mesa seleccionada">
+
+                <div class="mesa-detalle-head">
+
+                    <p class="mesa-detalle-titulo"><i class="fa-solid fa-chair"></i> Mesa seleccionada</p>
+
+                    <span class="mesa-estado"></span>
+
+                </div>
+
+                <div class="mesa-detalle-info">
+
+                </div>
+
+                <div class="mesa-detalle-acciones">
+
+                    <button type="button" class="btn abrir-cuenta"><i class="fa-solid fa-money-bill-wave"></i> Abrir
+                        cuenta</button>
+
+                    <button type="button" class="btn unir-mesa"><i class="fa-solid fa-link"></i> Unir mesa</button>
+
+                </div>
+
+            </section>
+
+                <div class="tabla-wrap d-none">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Cantidad</th>
+
+                                <th>Producto</th>
+
+                                <th>Precio</th>
+
+                                <th>Subtotal</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>1</td>
+
+                                <td>Pizza Margarita</td>
+
+                                <td>Q65</td>
+
+                                <td>Q65</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>2</td>
+
+                                <td>Limonada</td>
+
+                                <td>Q18</td>
+
+                                <td>Q36</td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+                <div class="totales d-none">
+
+                    <p><span>Subtotal:</span> <strong>Q101</strong></p>
+
+                    <p><span>Impuestos:</span> <strong>Q12</strong></p>
+
+                    <p class="total"><span><i class="fa-solid fa-money-bill-wave"></i> Total:</span>
+                        <strong>Q113</strong>
+                    </p>
+
+                </div>
+
+                <div class="acciones d-none">
+
+                    <button type="button" class="btn cobrar">Cobrar</button>
+
+                    <button type="button" class="btn cancelar">Cancelar Comanda</button>
+
+                </div>
+
+        </aside>
+
+    </main>
+
+
+
+    <script src="./app.js"> </script>
+
+</body>
+
+</html>
