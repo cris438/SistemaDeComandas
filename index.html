@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css"/>
 
 </head>
 
@@ -129,32 +129,7 @@
 
                         </thead>
 
-                        <tbody>
-
-                            <tr>
-
-                                <td>1</td>
-
-                                <td>Pizza Margarita</td>
-
-                                <td>Q65</td>
-
-                                <td>Q65</td>
-
-                            </tr>
-
-                            <tr>
-
-                                <td>2</td>
-
-                                <td>Limonada</td>
-
-                                <td>Q18</td>
-
-                                <td>Q36</td>
-
-                            </tr>
-
+                        <tbody id="tabla-pedido">
                         </tbody>
 
                     </table>
@@ -163,22 +138,20 @@
 
                 <div class="totales d-none">
 
-                    <p><span>Subtotal:</span> <strong>Q101</strong></p>
+                    <p><span>Subtotal:</span> <strong id="subtotal">Q0.00</strong></p>
 
-                    <p><span>Impuestos:</span> <strong>Q12</strong></p>
+                    <p><span>Impuestos:</span> <strong id="impuestos">Q0.00</strong></p>
 
                     <p class="total"><span><i class="fa-solid fa-money-bill-wave"></i> Total:</span>
-                        <strong>Q113</strong>
+                        <strong id="total">Q0.00</strong>
                     </p>
 
                 </div>
 
                 <div class="acciones d-none">
-
                     <button type="button" class="btn cobrar">Cobrar</button>
-
                     <button type="button" class="btn cancelar">Cancelar Comanda</button>
-
+                    <button type="button" class="btn finalizar" disabled>Cerrar Mesa</button>
                 </div>
 
         </aside>

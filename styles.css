@@ -4,6 +4,13 @@
   display: none;
 }
 
+/* Esto sirve para que estos elementos no surgan efecto a los elementos, como hacerlos invisibles al click */
+article p,
+article span,
+article h3{
+  pointer-events: none;
+}
+
 :root {
 
   --bg: #f4f7fb;
